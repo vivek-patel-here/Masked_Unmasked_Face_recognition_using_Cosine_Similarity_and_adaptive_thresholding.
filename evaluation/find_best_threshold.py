@@ -12,7 +12,7 @@ from similarity.cosine_similarity import cosine_similarity
 
 
 CSV_PATH = "evaluation/evaluation_pairs.csv"
-DATASET_ROOT = "Data/processed/faces"   # adjust if needed
+DATASET_ROOT = "Data/processed/faces"  
 
 
 df = pd.read_csv(CSV_PATH)

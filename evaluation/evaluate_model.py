@@ -20,7 +20,6 @@ DATASET_DIR = os.path.join(BASE_DIR, "../Data/processed/faces")
 labels = []
 predictions = []
 
-# cache for embeddings
 embedding_cache = {}
 
 

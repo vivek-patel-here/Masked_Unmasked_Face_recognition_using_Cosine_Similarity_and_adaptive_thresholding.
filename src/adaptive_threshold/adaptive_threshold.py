@@ -1,8 +1,8 @@
 import numpy as np
 
 
-BASE_THRESHOLD = 0.4
-# BASE_THRESHOLD = 0.6
+# BASE_THRESHOLD = 0.4
+BASE_THRESHOLD = 0.6
 
 
 def get_adaptive_threshold(condition):
@@ -31,8 +31,8 @@ def get_adaptive_threshold(condition):
 
     threshold -= quality_weights.get(condition["quality"], 0.03)
 
-    # return max(threshold, 0.3)
-    return max(threshold, 0.45)
+    return max(threshold, 0.3)
+    # return max(threshold, 0.45)
 
 def recognize(similarity, condition):
 
