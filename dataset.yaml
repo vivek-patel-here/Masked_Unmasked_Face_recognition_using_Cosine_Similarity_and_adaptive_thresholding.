@@ -1,0 +1,64 @@
+This project uses following dataset :
+  Name : LFW 
+  Link : https://www.kaggle.com/code/paultimothymooney/explore-labeled-faces-in-the-wild-lfw-data
+
+  Name : RMFRD
+  Link : https://www.kaggle.com/datasets/muhammeddalkran/masked-facerecognition
+
+  Name : SMFRD
+  Link : https://www.kaggle.com/code/muhammeddalkran/masked-face-recognition-with-lfw-smfrd
+
+
+
+Folder Structure 
+
+Adaptive_Face_Recognition/
+├── Data/
+│   ├── mask_dataset/
+│   ├── processed/
+│   └── raw/
+│
+├── evaluation/
+│   ├── evaluate_model.py
+│   ├── evaluation_pairs.csv
+│   ├── find_best_threshold.py
+│   ├── generate_pairs.py
+│   └── plot_analysis.py
+│
+├── models/
+│
+├── Relavent Papers/
+│
+├── results/
+│   ├── accuracy_vs_threshold.png
+│   ├── confusion_matrix.png
+│   ├── graph_generated.png
+│   ├── precision_recall_vs_threshold.png
+│   └── similarity_distribution.png
+│
+├── src/
+│   ├── adaptive_threshold/
+│   ├── condition_detection/
+│   ├── data_preparation/
+│   ├── feature_extraction/
+│   └── similarity/
+│
+├── testImg/
+│
+├── venv/
+│
+├── .gitignore
+├── dataset.yaml
+├── recognizer.py
+└── requirements.txt
+
+
+
+# How to use 
+
+1. Git clone https://github.com/vivek-patel-here/Masked_Unmasked_Face_recognition_using_Cosine_Similarity_and_adaptive_thresholding..git
+2. pip install -r requirements.txt
+3. python recognizer.py <makedImg>  <unmaskedImg>
+
+Output : True <--- If Match
+        False <--- Otherwise

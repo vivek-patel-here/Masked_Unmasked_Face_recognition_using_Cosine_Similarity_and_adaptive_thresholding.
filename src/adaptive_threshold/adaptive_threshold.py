@@ -1,8 +1,6 @@
 import numpy as np
 
-
-# BASE_THRESHOLD = 0.4
-BASE_THRESHOLD = 0.6
+BASE_THRESHOLD = 0.7
 
 
 def get_adaptive_threshold(condition):
